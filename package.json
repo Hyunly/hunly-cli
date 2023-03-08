@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "yargs": "^17.7.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0"
   }
 }
