@@ -45,6 +45,16 @@ class Query{
 
           return action
     }
+
+    async checkRepos(repos){
+      const { repo } = await inquirer.prompt({
+        name: 'repo',
+        type: 'list',
+        choices: repos,
+        message: 'Please choose a template to create project'
+      })
+      return repo;
+    }
 }
 
 module.exports = new Query()

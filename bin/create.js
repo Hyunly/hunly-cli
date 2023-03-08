@@ -4,6 +4,7 @@ const path = require('path')
 const chalk = require('chalk')
 
 const Query = require('./quirer.js')
+const Generator = require('./generator.js')
 
 async function createProject(){
 
@@ -49,6 +50,8 @@ async function createProject(){
     /**
      * 创建项目
      */
+    const generator = new Generator(projectName)
+    await generator.create()
 
 }
 
