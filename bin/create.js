@@ -5,8 +5,11 @@ const chalk = require('chalk')
 
 const Query = require('./quirer.js')
 const Generator = require('./generator.js')
+const Utils = require('./utils.js')
 
 async function createProject(){
+
+    console.log(`\n${Utils.logoText()}\n`)
 
     /**
      * 用户询问获取项目名称
@@ -21,7 +24,7 @@ async function createProject(){
     /**
      * 打印
      */
-    console.log(`Your project name is ${styleChalk(projectName)}`)
+    console.log(`\n ❤  Your project name is ${styleChalk(projectName)}\n`)
 
     /**
      * 获取当前指令目录

@@ -30,13 +30,13 @@ class Query{
             {
               name: 'action',
               type: 'list',
-              message: '该目录已存在，是否需要覆盖？',
+              message: 'The directory already exists. Do you want to overwrite it?',
               choices: [
                 {
-                  name: '覆盖',
+                  name: 'Overwrite',
                   value: 'overwrite'
                 },{
-                  name: '取消',
+                  name: 'Cancel',
                   value: false
                 }
               ]

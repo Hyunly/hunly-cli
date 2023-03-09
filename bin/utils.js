@@ -18,6 +18,7 @@ class Utils {
             return result
         } catch (error) {
             spinner.fail('Request failed, refetch ...')
+            return false
         }
     }
 
