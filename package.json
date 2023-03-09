@@ -10,7 +10,7 @@
   "bin": {
     "hunly": "./bin/cli.js"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "yargs": "^17.7.1"
   },
